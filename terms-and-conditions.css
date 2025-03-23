@@ -1,0 +1,136 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.8;
+    color: #2c3e50;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Header Styling */
+h2 {
+    color: #2c3e50;
+    margin-top: 40px;
+    margin-bottom: 15px;
+    border-left: 5px solid #4CAF50;
+    padding-left: 15px;
+    font-size: 2rem;
+    transition: border-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover Effect: Header */
+h2:hover {
+    border-color: #0077cc;
+    transform: translateX(5px);
+}
+
+/* Paragraph Styling */
+p {
+    margin: 15px 0;
+    font-size: 1rem;
+    color: #555;
+    transition: background 0.3s ease, padding-left 0.3s ease;
+}
+
+/* Hover Effect: Paragraph */
+p:hover {
+    background: #f0f8ff;
+    padding-left: 10px;
+}
+
+/* Address Styling */
+address {
+    font-style: normal;
+    background: #eef6f9;
+    padding: 15px;
+    border-left: 4px solid #4CAF50;
+    margin: 20px 0;
+    border-radius: 8px;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect: Address */
+address:hover {
+    background: #d9f2f5;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Ordered List Styling */
+ol {
+    margin-left: 20px;
+    padding-left: 0;
+}
+
+/* List Items Styling */
+ol li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+    transition: transform 0.3s ease;
+}
+
+/* Hover Effect: List Items */
+ol li:hover {
+    transform: translateX(5px);
+}
+
+/* Nested Lists */
+ol ol {
+    margin-top: 10px;
+}
+
+/* Links Styling */
+a {
+    color: #0077cc;
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease;
+}
+
+/* Hover Effect: Links */
+a:hover {
+    color: #4CAF50;
+}
+
+/* Footer Styling */
+footer {
+    margin-top: 40px;
+    text-align: center;
+    padding: 10px 0;
+    background: #2c3e50;
+    color: white;
+    border-radius: 8px;
+    transition: background 0.3s ease;
+}
+
+/* Footer Link */
+footer a {
+    color: #ffffff;
+    text-decoration: none; /* No underline */
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+/* Hover Effect: Footer Link */
+footer a:hover {
+    color: #4CAF50;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    p {
+        font-size: 0.95rem;
+    }
+
+    address {
+        font-size: 0.9rem;
+    }
+}

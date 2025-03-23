@@ -1,0 +1,108 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.8;
+    color: #333;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Header Styling */
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+/* Section Titles */
+h2 {
+    color: #2c3e50;
+    margin-top: 30px;
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 5px;
+}
+
+/* Subheadings */
+h3 {
+    color: #4CAF50;
+}
+
+/* Links Styling */
+a {
+    color: #0077cc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* Address Styling */
+address {
+    font-style: normal;
+    line-height: 1.5;
+    background: #eef6f9;
+    padding: 10px;
+    border-left: 4px solid #4CAF50;
+    margin: 20px 0;
+}
+
+/* Table of Contents */
+ol {
+    margin-left: 20px;
+    padding-left: 0;
+}
+
+ol li {
+    margin-bottom: 8px;
+}
+
+/* Paragraph Styling */
+p {
+    margin: 15px 0;
+}
+
+/* Footer Styling */
+footer {
+    margin-top: 40px;
+    text-align: center;
+    padding: 10px 0;
+    background: #2c3e50;
+    color: white;
+}
+
+footer a {
+    color: #ffffff;
+}
+
+/* Back to Top Link */
+.back-to-top {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+}
+
+.back-to-top:hover {
+    background-color: #45a049;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,317 @@
+/* Product card hover animation with RGB color transition and shadow */
+.product-card {
+    transform: translateY(0);
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.product-card:hover {
+    transform: translateY(-5px); /* Slight lift effect */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* More prominent shadow on hover */
+    transition: all 0.3s ease; /* Smooth transition on hover */
+    background-color: rgb(255, 255, 255); /* Smooth color change */
+    filter: brightness(1.1); /* Slight brightness increase */
+}
+
+/* RGB Hover Animation for product title */
+.product-card:hover .product-title {
+    color: rgb(255, 0, 150); /* RGB transition effect for title on hover */
+    text-shadow: 0 0 10px rgb(255, 0, 150), 0 0 20px rgb(255, 0, 150); /* Glowing text effect */
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+/* RGB Hover Animation for price */
+.product-card:hover .product-price {
+    color: rgb(34, 193, 195); /* RGB transition effect for price on hover */
+    text-shadow: 0 0 10px rgb(34, 193, 195), 0 0 20px rgb(34, 193, 195); /* Glowing text effect */
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+/* Toast notification animation */
+.toast {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    padding: 1rem;
+    background: #4CAF50;
+    color: white;
+    border-radius: 0.5rem;
+    animation: slideIn 0.3s ease, fadeOut 2s 2s forwards;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+}
+
+/* Modal transition with fade and scale effects */
+.modal {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+    transform: scale(0.9); /* Modal starts slightly scaled down */
+}
+
+.modal.active {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1); /* Modal zooms in */
+}
+
+/* Button hover animation with RGB glow and pulse effect */
+.button, .link {
+    position: relative;
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background-color: #3498db;
+    color: #fff;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px rgba(52, 152, 219, 0.6);
+}
+
+.button:hover, .link:hover {
+    transform: scale(1.05); /* Slightly enlarge the button/link */
+    background-color: rgb(52, 152, 219);
+    box-shadow: 0 0 20px rgb(52, 152, 219); /* Enhanced glowing effect */
+    text-shadow: 0 0 15px rgb(52, 152, 219), 0 0 25px rgb(52, 152, 219); /* Glowing text */
+    animation: pulse 1s infinite; /* Pulse animation effect */
+}
+
+.cartButton {
+    transform: scale(1.05); /* Slightly enlarge the button/link */
+    background-color: rgb(52, 152, 219);
+    box-shadow: 0 0 20px rgb(52, 152, 219); /* Enhanced glowing effect */
+    text-shadow: 0 0 15px rgb(52, 152, 219), 0 0 25px rgb(52, 152, 219); /* Glowing text */
+    animation: pulse 1s infinite; /* Pulse animation effect */
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 10px rgb(52, 152, 219);
+    }
+    50% {
+        transform: scale(1.1);
+        box-shadow: 0 0 25px rgb(52, 152, 219), 0 0 40px rgb(52, 152, 219);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 10px rgb(52, 152, 219);
+    }
+}
+
+/* Modal overlay with scaling effect */
+.modal-overlay {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+    transform: scale(0.95); /* Overlay starts slightly smaller */
+}
+
+.modal-overlay.active {
+    opacity: 0.7;
+    visibility: visible;
+    transform: scale(1); /* Overlay zooms in */
+}
+
+/* Optional: Add a more subtle RGB transition effect for other interactive elements */
+.link {
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.link:hover {
+    color: rgb(34, 193, 195); /* RGB effect on link hover */
+    text-shadow: 0 0 10px rgb(34, 193, 195), 0 0 20px rgb(34, 193, 195); /* Glowing effect */
+}
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.8;
+    color: #333;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Header Styling */
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Hover Effect: Header */
+h1:hover {
+    transform: scale(1.05);
+    color: #4CAF50;
+}
+
+/* Section Titles */
+h2 {
+    color: #2c3e50;
+    margin-top: 30px;
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 5px;
+    transition: border-color 0.3s ease;
+}
+
+/* Hover Effect: Section Titles */
+h2:hover {
+    border-color: #0077cc;
+}
+
+/* Subheadings */
+h3 {
+    color: #4CAF50;
+    transition: color 0.3s ease;
+}
+
+/* Hover Effect: Subheadings */
+h3:hover {
+    color: #2c3e50;
+}
+
+/* Links Styling */
+a {
+    color: #0077cc;
+    text-decoration: none; /* No underline */
+    transition: color 0.3s ease;
+}
+
+/* Hover Effect: Links (No Underline) */
+a:hover {
+    color: #0056b3;
+}
+
+/* Address Styling */
+address {
+    font-style: normal;
+    line-height: 1.5;
+    background: #eef6f9;
+    padding: 10px;
+    border-left: 4px solid #4CAF50;
+    margin: 20px 0;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect: Address */
+address:hover {
+    background: #d9f2f5;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Table of Contents */
+ol {
+    margin-left: 20px;
+    padding-left: 0;
+}
+
+ol li {
+    margin-bottom: 8px;
+    transition: transform 0.3s ease;
+}
+
+/* Hover Effect: List Items */
+ol li:hover {
+    transform: translateX(5px);
+}
+
+/* Paragraph Styling */
+p {
+    margin: 15px 0;
+    transition: background 0.3s ease, padding 0.3s ease;
+}
+
+/* Hover Effect: Paragraphs */
+p:hover {
+    background: #f4f4f4;
+    padding-left: 10px;
+}
+
+/* Footer Styling */
+footer {
+    margin-top: 40px;
+    text-align: center;
+    padding: 10px 0;
+    background: #2c3e50;
+    color: white;
+    transition: background 0.3s ease;
+}
+
+/* Hover Effect: Footer */
+footer:hover {
+    background: #1a252f;
+}
+
+/* Footer Links */
+footer a {
+    color: #ffffff;
+    transition: color 0.3s ease;
+    text-decoration: none; /* No underline */
+}
+
+/* Hover Effect: Footer Links (No Underline) */
+footer a:hover {
+    color: #4CAF50;
+}
+
+/* Back to Top Button */
+.back-to-top {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none; /* No underline */
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover Effect: Back to Top Button */
+.back-to-top:hover {
+    background-color: #45a049;
+    transform: translateY(-3px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+}
